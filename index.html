@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samirin33 VPM - VCC Listing</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.5; color: #24292f; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #57606a; margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+    ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+    li { margin: 0.25rem 0; }
+    .url-box { display: flex; align-items: center; gap: 0.5rem; background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px; padding: 0.5rem 0.75rem; margin: 0.75rem 0; }
+    .url-box code { flex: 1; word-break: break-all; font-size: 0.875rem; }
+    .btn { display: inline-block; padding: 0.35rem 0.75rem; font-size: 0.875rem; font-weight: 500; color: #fff; background: #0969da; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; }
+    .btn:hover { background: #0550ae; }
+    .btn-outline { background: transparent; color: #0969da; border: 1px solid #0969da; }
+    .btn-outline:hover { background: #f6f8fa; }
+    .card { border: 1px solid #d0d7de; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fff; }
+    .card h3 { font-size: 1rem; margin: 0 0 0.25rem 0; }
+    .card .meta { font-size: 0.875rem; color: #57606a; margin-bottom: 0.5rem; }
+    .card .desc { font-size: 0.875rem; margin: 0.5rem 0; }
+    .card .actions { margin-top: 0.75rem; }
+    .toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); padding: 0.5rem 1rem; background: #24292f; color: #fff; border-radius: 6px; font-size: 0.875rem; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+    .toast.show { opacity: 1; }
+    a { color: #0969da; }
+    a:hover { text-decoration: underline; }
+    .docs-link { font-size: 0.875rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Samirin33 VPM Repo</h1>
+  <p class="subtitle">Samirin33 の VPM パッケージ用リポジトリです。</p>
+
+  <h2>VCC にこのリポジトリを追加する方法</h2>
+  <ol>
+    <li>VCC（VRChat Creator Companion）を開き、<strong>Settings</strong> を開く</li>
+    <li><strong>Packages</strong> タブをクリック</li>
+    <li><strong>Add Repository</strong> をクリック</li>
+    <li>表示された欄に、下の「Listing URL」を貼り付ける</li>
+    <li><strong>Add</strong> をクリックし、内容を確認して <strong>I Understand</strong> をクリック</li>
+    <li>プロジェクトを開くと、追加したリポジトリのパッケージが表示されます</li>
+  </ol>
+
+  <p><strong>Listing URL</strong></p>
+  <div class="url-box">
+    <code id="vpmUrl">https://samirin33.github.io/Samirin33VPM/vpm.json</code>
+    <button type="button" class="btn" id="copyBtn">Copy</button>
+  </div>
+  <p>
+    <a href="#" class="btn" id="addToVcc">Add to VCC</a>
+  </p>
+
+  <p class="docs-link">Package Listings の詳細は <a href="https://vcc.docs.vrchat.com/vpm/repos" target="_blank" rel="noopener">VCC ドキュメント</a> を参照してください。</p>
+
+  <h2>パッケージ一覧</h2>
+
+  <div class="card">
+    <h3>SamirinVRCUtility Avatars</h3>
+    <p class="meta">com.github.samirin33.samirin-vrc-utility.avatars · v0.1.0</p>
+    <p class="desc">Samirin33 の VRChat Avatar 3.0 用 NDMF ツールです。</p>
+    <p class="meta">Dependencies: com.vrchat.avatars, nadena.dev.ndmf, nadena.dev.modular-avatar</p>
+    <p class="meta">License: MIT</p>
+    <div class="actions">
+      <a href="#" class="btn btn-outline" id="addPkgVcc">Add to VCC</a>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">コピーしました</div>
+
+  <script>
+    (function () {
+      var base = location.origin + location.pathname.replace(/\/index\.html$/i, '').replace(/\/$/, '');
+      var vpmJsonUrl = base + '/vpm.json';
+
+      document.getElementById('vpmUrl').textContent = vpmJsonUrl;
+      document.getElementById('addToVcc').href = 'vcc://vpm/addRepo?url=' + encodeURIComponent(vpmJsonUrl);
+      document.getElementById('addPkgVcc').href = 'vcc://vpm/addRepo?url=' + encodeURIComponent(vpmJsonUrl);
+
+      var copyBtn = document.getElementById('copyBtn');
+      var toast = document.getElementById('toast');
+      copyBtn.addEventListener('click', function () {
+        navigator.clipboard.writeText(vpmJsonUrl).then(function () {
+          toast.classList.add('show');
+          setTimeout(function () { toast.classList.remove('show'); }, 2000);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
