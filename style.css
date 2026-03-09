@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #02030a url("img/SamirinVPM_BackGround.png") center / cover fixed no-repeat;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.5;
+  color: #f9fafb;
+  background: rgba(2, 3, 10, 0.88);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #d0d7de;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+li {
+  margin: 0.25rem 0;
+}
+
+.url-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0;
+  backdrop-filter: blur(10px);
+}
+
+.url-box code {
+  flex: 1;
+  word-break: break-all;
+  font-size: 0.875rem;
+}
+
+/* Samirin SButton 風ボタン */
+.btn,
+.btn-outline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.6);
+  transition: transform 0.06s ease-out, box-shadow 0.06s ease-out,
+    filter 0.1s ease-out, background 0.1s ease-out;
+}
+
+.btn {
+  color: #ffffff;
+  background-image: linear-gradient(135deg, #ff6fa6, #ff9a6f);
+}
+
+.btn-outline {
+  color: #ff6fa6;
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(255, 111, 166, 0.8);
+}
+
+.btn:hover,
+.btn-outline:hover {
+  filter: brightness(1.08);
+}
+
+.btn:active,
+.btn-outline:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.card .meta {
+  font-size: 0.875rem;
+  color: #e2e8f0;
+  margin-bottom: 0.25rem;
+}
+
+.card .desc {
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+.card .actions {
+  margin-top: 0.75rem;
+}
+
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: rgba(15, 23, 42, 0.95);
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+a {
+  color: #7dd3fc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.docs-link {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+  color: #cbd5f5;
+}
+

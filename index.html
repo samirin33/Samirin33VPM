@@ -4,31 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samirin33 VPM - VCC Listing</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.5; color: #24292f; }
-    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .subtitle { color: #57606a; margin-bottom: 2rem; }
-    h2 { font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.75rem; }
-    ol { padding-left: 1.5rem; margin: 0.5rem 0; }
-    li { margin: 0.25rem 0; }
-    .url-box { display: flex; align-items: center; gap: 0.5rem; background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px; padding: 0.5rem 0.75rem; margin: 0.75rem 0; }
-    .url-box code { flex: 1; word-break: break-all; font-size: 0.875rem; }
-    .btn { display: inline-block; padding: 0.35rem 0.75rem; font-size: 0.875rem; font-weight: 500; color: #fff; background: #0969da; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; }
-    .btn:hover { background: #0550ae; }
-    .btn-outline { background: transparent; color: #0969da; border: 1px solid #0969da; }
-    .btn-outline:hover { background: #f6f8fa; }
-    .card { border: 1px solid #d0d7de; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fff; }
-    .card h3 { font-size: 1rem; margin: 0 0 0.25rem 0; }
-    .card .meta { font-size: 0.875rem; color: #57606a; margin-bottom: 0.5rem; }
-    .card .desc { font-size: 0.875rem; margin: 0.5rem 0; }
-    .card .actions { margin-top: 0.75rem; }
-    .toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); padding: 0.5rem 1rem; background: #24292f; color: #fff; border-radius: 6px; font-size: 0.875rem; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
-    .toast.show { opacity: 1; }
-    a { color: #0969da; }
-    a:hover { text-decoration: underline; }
-    .docs-link { font-size: 0.875rem; margin-top: 1.5rem; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Samirin33 VPM Repo</h1>
@@ -57,16 +33,7 @@
 
   <h2>パッケージ一覧</h2>
 
-  <div class="card">
-    <h3>SamirinVRCUtility Avatars</h3>
-    <p class="meta">com.github.samirin33.samirin-vrc-utility.avatars · v0.1.0</p>
-    <p class="desc">Samirin33 の VRChat Avatar 3.0 用 NDMF ツールです。</p>
-    <p class="meta">Dependencies: com.vrchat.avatars, nadena.dev.ndmf, nadena.dev.modular-avatar</p>
-    <p class="meta">License: MIT</p>
-    <div class="actions">
-      <a href="#" class="btn btn-outline" id="addPkgVcc">Add to VCC</a>
-    </div>
-  </div>
+  <div id="packages"></div>
 
   <div id="toast" class="toast">コピーしました</div>
 
@@ -75,10 +42,11 @@
       var base = location.origin + location.pathname.replace(/\/index\.html$/i, '').replace(/\/$/, '');
       var vpmJsonUrl = base + '/vpm.json';
 
+      // Listing URL / Add to VCC
       document.getElementById('vpmUrl').textContent = vpmJsonUrl;
       document.getElementById('addToVcc').href = 'vcc://vpm/addRepo?url=' + encodeURIComponent(vpmJsonUrl);
-      document.getElementById('addPkgVcc').href = 'vcc://vpm/addRepo?url=' + encodeURIComponent(vpmJsonUrl);
 
+      // Copy ボタン
       var copyBtn = document.getElementById('copyBtn');
       var toast = document.getElementById('toast');
       copyBtn.addEventListener('click', function () {
@@ -87,6 +55,76 @@
           setTimeout(function () { toast.classList.remove('show'); }, 2000);
         });
       });
+
+      // vpm.json からパッケージ一覧を動的に生成
+      var container = document.getElementById('packages');
+      fetch(vpmJsonUrl)
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          var pkgs = data.packages || {};
+          var keys = Object.keys(pkgs);
+          if (keys.length === 0) {
+            container.innerHTML = '<p class="subtitle">登録されているパッケージがありません。</p>';
+            return;
+          }
+
+          keys.forEach(function (id) {
+            var versions = pkgs[id].versions || {};
+            var versionKeys = Object.keys(versions);
+            if (versionKeys.length === 0) return;
+
+            // 最新バージョン（キーの最後を採用）
+            var verKey = versionKeys[versionKeys.length - 1];
+            var v = versions[verKey];
+
+            var card = document.createElement('div');
+            card.className = 'card';
+
+            var title = document.createElement('h3');
+            title.textContent = v.displayName || id;
+            card.appendChild(title);
+
+            var meta = document.createElement('p');
+            meta.className = 'meta';
+            meta.textContent = id + ' · v' + (v.version || verKey);
+            card.appendChild(meta);
+
+            if (v.description) {
+              var desc = document.createElement('p');
+              desc.className = 'desc';
+              desc.textContent = v.description;
+              card.appendChild(desc);
+            }
+
+            if (v.vpmDependencies) {
+              var dep = document.createElement('p');
+              dep.className = 'meta';
+              dep.textContent = 'Dependencies: ' + Object.keys(v.vpmDependencies).join(', ');
+              card.appendChild(dep);
+            }
+
+            if (v.license) {
+              var lic = document.createElement('p');
+              lic.className = 'meta';
+              lic.textContent = 'License: ' + v.license;
+              card.appendChild(lic);
+            }
+
+            var actions = document.createElement('div');
+            actions.className = 'actions';
+            var btn = document.createElement('a');
+            btn.className = 'btn btn-outline';
+            btn.textContent = 'Add to VCC';
+            btn.href = 'vcc://vpm/addRepo?url=' + encodeURIComponent(vpmJsonUrl);
+            actions.appendChild(btn);
+            card.appendChild(actions);
+
+            container.appendChild(card);
+          });
+        })
+        .catch(function () {
+          container.innerHTML = '<p class="subtitle">vpm.json の読み込みに失敗しました。GitHub Pages の公開状況とパスを確認してください。</p>';
+        });
     })();
   </script>
 </body>
