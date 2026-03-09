@@ -9,6 +9,23 @@
         "0.1.0": {
           "name": "com.github.samirin33.samirin-vrc-utility.avatars",
           "displayName": "SamirinVRCUtility Avatars",
+          "version": "0.1.0",
+          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "author": {
+            "name": "samirin33"
+          },
+          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatars-0.1.0.zip",
+          "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.ndmf": ">=1.5.0",
+            "nadena.dev.modular-avatar": ">=1.8.0"
+          },
+          "license": "MIT"
+        },
+        "0.1.1": {
+          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
+          "displayName": "SamirinVRCUtility Avatars",
           "version": "0.1.1",
           "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
           "author": {
@@ -28,6 +45,22 @@
     "com.github.samirin33.samirin-vrc-utility.avatar-editor": {
       "versions": {
         "0.1.0": {
+          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
+          "displayName": "SamirinVRCUtility Avatar Editor",
+          "version": "0.1.0",
+          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "author": {
+            "name": "samirin33"
+          },
+          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.1.0.zip",
+          "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.1.0"
+          },
+          "license": "MIT"
+        },
+        "0.1.1": {
           "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
           "displayName": "SamirinVRCUtility Avatar Editor",
           "version": "0.1.1",
