@@ -105,7 +105,7 @@
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.1.0"
+            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
           },
           "license": "MIT"
         }
