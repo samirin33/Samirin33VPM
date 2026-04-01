@@ -48,7 +48,7 @@
           "author": {
             "name": "samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.3/com.github.samirin33.samirin-vrc-utility.avatars-0.2.3.zip",
+          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
