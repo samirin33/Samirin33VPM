@@ -56,6 +56,23 @@
             "nadena.dev.modular-avatar": ">=1.8.0"
           },
           "license": "MIT"
+        },
+        "0.2.4": {
+          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
+          "displayName": "SamirinVRCUtility Avatars",
+          "version": "0.2.4",
+          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "author": {
+            "name": "samirin33"
+          },
+          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
+          "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.ndmf": ">=1.5.0",
+            "nadena.dev.modular-avatar": ">=1.8.0"
+          },
+          "license": "MIT"
         }
       }
     },
