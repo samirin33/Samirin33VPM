@@ -4,7 +4,7 @@ import subprocess
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 
-from update_vpm import add_or_update_version
+from update_vpm import add_or_update_version, update_url_version
 
 
 class VpmGui(tk.Tk):
@@ -13,7 +13,9 @@ class VpmGui(tk.Tk):
         self.title("Samirin VPM Editor")
         self.geometry("780x520")
 
-        self.vpm_path_var = tk.StringVar(value="vpm.json")
+        self.vpm_path_var = tk.StringVar(
+            value=r"D:\UnityProjects\VRChatProjects\SamirinVRCUtility\Samirin33VPM\vpm.json"
+        )
         self.package_id_var = tk.StringVar()
         self.version_var = tk.StringVar()
         self.zip_url_var = tk.StringVar()
@@ -29,8 +31,11 @@ class VpmGui(tk.Tk):
 
         self.package_combo = None
         self.desc_text = None
+        self.loaded_version = ""
+        self._updating_zip_url = False
 
         self._build_ui()
+        self.version_var.trace_add("write", self.on_version_changed)
 
     # UI 構築 ------------------------------------------------------------
     def _build_ui(self):
@@ -222,6 +227,7 @@ class VpmGui(tk.Tk):
 
         latest_key = sorted(versions.keys())[-1]
         v = versions[latest_key]
+        self.loaded_version = latest_key
 
         # フィールドへ反映
         self.version_var.set(latest_key)
@@ -250,6 +256,28 @@ class VpmGui(tk.Tk):
         """パッケージ選択変更時に自動で最新バージョン情報を反映"""
         if self.package_id_var.get().strip():
             self.load_previous_version(show_popup=False)
+
+    def on_version_changed(self, *_):
+        """
+        Version 入力が変更されたら、Zip URL 内のバージョン文字列も追従更新する。
+        手動で URL を編集したいケースを妨げないよう、置換できる場合のみ更新。
+        """
+        if self._updating_zip_url:
+            return
+
+        new_version = self.version_var.get().strip()
+        current_url = self.zip_url_var.get().strip()
+        if not new_version or not current_url or not self.loaded_version:
+            return
+
+        updated_url = update_url_version(current_url, self.loaded_version, new_version)
+        if updated_url != current_url:
+            self._updating_zip_url = True
+            try:
+                self.zip_url_var.set(updated_url)
+                self.loaded_version = new_version
+            finally:
+                self._updating_zip_url = False
 
     def run_update(self):
         vpm_path = self.vpm_path_var.get().strip()

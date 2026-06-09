@@ -2,6 +2,7 @@ import argparse
 import copy
 import json
 import os
+import re
 from typing import Dict, Any
 
 
@@ -46,11 +47,26 @@ def parse_deps(dep_args):
     return deps
 
 
+def update_url_version(url: str, old_version: str, new_version: str) -> str:
+    """
+    URL 内のバージョン文字列を更新する。
+    - old_version が含まれていればそれを置換
+    - 含まれない場合は x.y.z 形式を新バージョンへ置換
+    """
+    if not url or old_version == new_version:
+        return url
+
+    if old_version and old_version in url:
+        return url.replace(old_version, new_version)
+
+    return re.sub(r"\d+\.\d+\.\d+", new_version, url)
+
+
 def add_or_update_version(
     vpm_path: str,
     package_id: str,
     version: str,
-    zip_url: str,
+    zip_url: str = None,
     display_name: str = None,
     description: str = None,
     license_name: str = None,
@@ -63,6 +79,10 @@ def add_or_update_version(
 
     if package_id not in packages:
         # 新規パッケージ
+        if not zip_url:
+            raise SystemExit(
+                "新規パッケージ追加時は --zip-url が必要です。"
+            )
         versions: Dict[str, Any] = {}
         versions[version] = {
             "name": package_id,
@@ -80,10 +100,14 @@ def add_or_update_version(
         # 既存パッケージ: 既存バージョンの最後をコピーして上書き
         pkg = packages[package_id]
         versions = pkg.setdefault("versions", {})
+        old_version = ""
+        old_url = ""
         if versions:
             # キーの末尾を「最新」とみなす（プレーンな 0.1.0 などを想定）
             latest_key = sorted(versions.keys())[-1]
             base = copy.deepcopy(versions[latest_key])
+            old_version = str(base.get("version", latest_key))
+            old_url = str(base.get("url", ""))
         else:
             base = {
                 "name": package_id,
@@ -94,10 +118,15 @@ def add_or_update_version(
                 "vpmDependencies": {},
                 "license": license_name or "",
             }
+            old_version = ""
+            old_url = ""
 
         base["name"] = package_id
         base["version"] = version
-        base["url"] = zip_url
+        if zip_url:
+            base["url"] = update_url_version(zip_url, old_version, version)
+        else:
+            base["url"] = update_url_version(old_url, old_version, version)
 
         if display_name is not None:
             base["displayName"] = display_name
@@ -126,8 +155,8 @@ def main():
     )
     parser.add_argument(
         "--vpm-path",
-        default="vpm.json",
-        help="vpm.json へのパス（既定: vpm.json）",
+        default=r"D:\UnityProjects\VRChatProjects\SamirinVRCUtility\Samirin33VPM\vpm.json",
+        help="vpm.json へのパス（既定: Samirin33VPM の vpm.json）",
     )
     parser.add_argument(
         "--package-id",
@@ -141,8 +170,7 @@ def main():
     )
     parser.add_argument(
         "--zip-url",
-        required=True,
-        help="GitHub Releases の zip の URL",
+        help="GitHub Releases の zip の URL（既存パッケージ更新時は省略可）",
     )
     parser.add_argument(
         "--display-name",
