@@ -193,9 +193,10 @@
           "version": "0.5.0",
           "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.5.0/com.github.samirin33.samirin-vrc-utility.avatars-0.5.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.5.0/com.github.samirin33.samivrcblocks-avatar-0.5.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -471,9 +472,10 @@
           "version": "0.5.0",
           "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.5.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.5.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.5.0/com.github.samirin33.samivrcblocks-avatar-editor-0.5.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",

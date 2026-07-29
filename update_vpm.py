@@ -62,6 +62,20 @@ def update_url_version(url: str, old_version: str, new_version: str) -> str:
     return re.sub(r"\d+\.\d+\.\d+", new_version, url)
 
 
+def normalize_zip_url(url: str, package_id: str, version: str) -> str:
+    """
+    GitHub Releases の zip ファイル名を package_id-version.zip に揃える。
+    パッケージ ID 変更後に旧 zip 名が残るのを防ぐ。
+    """
+    if not url:
+        return url
+    return re.sub(
+        r"/[^/]+-\d+\.\d+\.\d+\.zip$",
+        f"/{package_id}-{version}.zip",
+        url,
+    )
+
+
 def add_or_update_version(
     vpm_path: str,
     package_id: str,
@@ -124,9 +138,17 @@ def add_or_update_version(
         base["name"] = package_id
         base["version"] = version
         if zip_url:
-            base["url"] = update_url_version(zip_url, old_version, version)
+            base["url"] = normalize_zip_url(
+                update_url_version(zip_url, old_version, version),
+                package_id,
+                version,
+            )
         else:
-            base["url"] = update_url_version(old_url, old_version, version)
+            base["url"] = normalize_zip_url(
+                update_url_version(old_url, old_version, version),
+                package_id,
+                version,
+            )
 
         if display_name is not None:
             base["displayName"] = display_name
