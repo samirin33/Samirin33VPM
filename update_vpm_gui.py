@@ -10,7 +10,7 @@ from update_vpm import add_or_update_version, update_url_version
 class VpmGui(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Samirin VPM Editor")
+        self.title("SamiVRCBlocks VPM Editor")
         self.geometry("780x520")
 
         self.vpm_path_var = tk.StringVar(

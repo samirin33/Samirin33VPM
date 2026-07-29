@@ -161,7 +161,7 @@ def main():
     parser.add_argument(
         "--package-id",
         required=True,
-        help="パッケージ ID（例: com.github.samirin33.samirin-vrc-utility.avatars）",
+        help="パッケージ ID（例: com.github.samirin33.samivrcblocks-avatar）",
     )
     parser.add_argument(
         "--version",

@@ -1,20 +1,21 @@
 {
-  "name": "Samirin33 VPM",
+  "name": "SamiVRCBlocks VPM",
   "id": "com.github.samirin33.vpm",
   "url": "https://samirin33.github.io/Samirin33VPM/vpm.json",
   "author": "samirin33",
   "packages": {
-    "com.github.samirin33.samirin-vrc-utility.avatars": {
+    "com.github.samirin33.samivrcblocks-avatar": {
       "versions": {
         "0.1.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.1.0",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatars-0.1.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatars-0.1.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -24,14 +25,15 @@
           "license": "MIT"
         },
         "0.1.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.1.1",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.1.1/com.github.samirin33.samirin-vrc-utility.avatars-0.1.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.1.1/com.github.samirin33.samirin-vrc-utility.avatars-0.1.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -41,14 +43,15 @@
           "license": "MIT"
         },
         "0.2.3": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.2.3",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -58,14 +61,15 @@
           "license": "MIT"
         },
         "0.2.4": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.2.4",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.2.4/com.github.samirin33.samirin-vrc-utility.avatars-0.2.4.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -75,14 +79,15 @@
           "license": "MIT"
         },
         "0.2.5": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.2.5",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.5/com.github.samirin33.samirin-vrc-utility.avatars-0.2.5.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.2.5/com.github.samirin33.samirin-vrc-utility.avatars-0.2.5.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -92,14 +97,15 @@
           "license": "MIT"
         },
         "0.2.6": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.2.6",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.2.6/com.github.samirin33.samirin-vrc-utility.avatars-0.2.6.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.2.6/com.github.samirin33.samirin-vrc-utility.avatars-0.2.6.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -109,14 +115,15 @@
           "license": "MIT"
         },
         "0.3.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.3.0",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.3.0/com.github.samirin33.samirin-vrc-utility.avatars-0.3.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.3.0/com.github.samirin33.samirin-vrc-utility.avatars-0.3.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -126,14 +133,15 @@
           "license": "MIT"
         },
         "0.3.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.3.1",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.3.1/com.github.samirin33.samirin-vrc-utility.avatars-0.3.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.3.1/com.github.samirin33.samirin-vrc-utility.avatars-0.3.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -143,14 +151,15 @@
           "license": "MIT"
         },
         "0.3.2": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.3.2",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.3.2/com.github.samirin33.samirin-vrc-utility.avatars-0.3.2.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.3.2/com.github.samirin33.samirin-vrc-utility.avatars-0.3.2.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
@@ -160,265 +169,283 @@
           "license": "MIT"
         },
         "0.4.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatars",
-          "displayName": "SamirinVRCUtility Avatars",
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
           "version": "0.4.0",
-          "description": "Samirin33's VRChat Avatar 3.0 NDMF Tool",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-Avatars/releases/download/0.4.0/com.github.samirin33.samirin-vrc-utility.avatars-0.4.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.4.0/com.github.samirin33.samirin-vrc-utility.avatars-0.4.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.0",
             "nadena.dev.modular-avatar": ">=1.8.0"
           },
-          "license": "MIT"
+          "license": "MIT",
+          "unity": "2022.3"
         }
       }
     },
-    "com.github.samirin33.samirin-vrc-utility.avatar-editor": {
+    "com.github.samirin33.samivrcblocks-avatar-editor": {
       "versions": {
         "0.1.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.1.0",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.1.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.1.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.1.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.1.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.1.0"
           },
           "license": "MIT"
         },
         "0.1.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.1.1",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.1.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.1.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.1.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.1.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.1.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.1.0"
           },
           "license": "MIT"
         },
         "0.2.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.2.0",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.2.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.2.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.2.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.2.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.2.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.2.1",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.2.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.2.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.2.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.2.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.3.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.0",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.3.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.1",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.3.2": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.2",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.2/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.2.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.2/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.2.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.3.3": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.3",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.3/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.3.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.3/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.3.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.0"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.0"
           },
           "license": "MIT"
         },
         "0.3.4": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.4",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.4/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.4.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.4/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.4.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.3.5": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.5",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.5/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.5.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.5/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.5.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.3.6": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.6",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.6/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.6.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.6/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.6.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.3.7": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.3.7",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.3.7/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.7.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.3.7/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.3.7.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.4.0": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.4.0",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.4.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.0.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.4.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.4.1": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.4.1",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.4.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.1.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.4.1/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.1.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
           "license": "MIT"
         },
         "0.4.2": {
-          "name": "com.github.samirin33.samirin-vrc-utility.avatar-editor",
-          "displayName": "SamirinVRCUtility Avatar Editor",
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
           "version": "0.4.2",
-          "description": "Samirin33's Avatar editor utilities for VRChat/Unity.",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
           "author": {
-            "name": "samirin33"
+            "name": "samirin33",
+            "url": "https://github.com/samirin33"
           },
-          "url": "https://github.com/samirin33/SamirinVRCUtility-AvatarEditor/releases/download/0.4.2/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.2.zip",
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.4.2/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.2.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
-            "com.github.samirin33.samirin-vrc-utility.avatars": ">=0.2.5"
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
           },
-          "license": "MIT"
+          "license": "MIT",
+          "unity": "2022.3"
         }
       }
     }
