@@ -186,6 +186,24 @@
           },
           "license": "MIT",
           "unity": "2022.3"
+        },
+        "0.5.0": {
+          "name": "com.github.samirin33.samivrcblocks-avatar",
+          "displayName": "SamiVRCBlocks-Avatar",
+          "version": "0.5.0",
+          "description": "SamiVRCBlocks-Avatar: NDMF/Modular Avatar based build-time components for VRChat Avatar 3.0.",
+          "author": {
+            "name": "samirin33"
+          },
+          "url": "https://github.com/samirin33/SamiVRCBlocks-Avatar/releases/download/0.5.0/com.github.samirin33.samirin-vrc-utility.avatars-0.5.0.zip",
+          "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "nadena.dev.ndmf": ">=1.5.0",
+            "nadena.dev.modular-avatar": ">=1.8.0"
+          },
+          "license": "MIT",
+          "unity": "2022.3"
         }
       }
     },
@@ -439,6 +457,23 @@
             "url": "https://github.com/samirin33"
           },
           "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.4.2/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.4.2.zip",
+          "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0",
+            "com.github.samirin33.samivrcblocks-avatar": ">=0.2.5"
+          },
+          "license": "MIT",
+          "unity": "2022.3"
+        },
+        "0.5.0": {
+          "name": "com.github.samirin33.samivrcblocks-avatar-editor",
+          "displayName": "SamiVRCBlocks-AvatarEditor",
+          "version": "0.5.0",
+          "description": "SamiVRCBlocks-AvatarEditor: Editor tools for VRChat Avatar 3.0 (Animator, AnimationClip, parameters).",
+          "author": {
+            "name": "samirin33"
+          },
+          "url": "https://github.com/samirin33/SamiVRCBlocks-AvatarEditor/releases/download/0.5.0/com.github.samirin33.samirin-vrc-utility.avatar-editor-0.5.0.zip",
           "repo": "https://samirin33.github.io/Samirin33VPM/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
