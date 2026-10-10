@@ -3,19 +3,21 @@ setlocal
 
 rem Simple builder for update_vpm / update_vpm_gui (PyInstaller)
 rem Usage: double-click this .bat or run from PowerShell/cmd.
+rem Intermediate files go to .pybuild\ (git-ignored) so that the tracked build\ and *.spec stay untouched.
 
 cd /d "%~dp0"
+set WORK=%~dp0.pybuild
 
 echo [1/3] Installing / updating PyInstaller...
 py -m pip install --upgrade pyinstaller >nul 2>nul
 if errorlevel 1 goto pip_error
 
 echo [2/3] Building update_vpm (CLI)...
-py -m PyInstaller --onefile --name update_vpm update_vpm.py
+py -m PyInstaller --noconfirm --onefile --name update_vpm --workpath "%WORK%" --specpath "%WORK%" --distpath dist update_vpm.py
 if errorlevel 1 goto build_error
 
 echo [3/3] Building update_vpm_gui (GUI)...
-py -m PyInstaller --onefile --noconsole --name update_vpm_gui update_vpm_gui.py
+py -m PyInstaller --noconfirm --onefile --noconsole --name update_vpm_gui --workpath "%WORK%" --specpath "%WORK%" --distpath dist update_vpm_gui.py
 if errorlevel 1 goto build_error
 
 echo.
@@ -31,4 +33,3 @@ goto :eof
 echo Build failed.
 pause
 goto :eof
-

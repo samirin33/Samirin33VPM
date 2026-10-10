@@ -1,3 +1,6 @@
 __pycache__/
 *.py[cod]
+vpm_tool_config.json
+*.tmp
+.pybuild/
 
